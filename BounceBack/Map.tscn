@@ -1071,4 +1071,4 @@ tile_set = SubResource("TileSet_75ksg")
 metadata/_tc_uuid = "7447649855609612970"
 
 [node name="Player" parent="." unique_id=1070660644 instance=ExtResource("3_3h1ab")]
-position = Vector2(353, 82)
+position = Vector2(302, 164)
