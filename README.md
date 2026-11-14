@@ -1,14 +1,14 @@
 # Emoji Kenobi - Haven Bounce Back!
 
-[![License](https://img.shields.io/github/license/CircuitGuy943/CinderV2-Filament-Dryer)](https://github.com/CircuitGuy943/CinderV2-Filament-Dryer/blob/main/LICENSE.md)
+[![License](https://img.shields.io/github/license/CircuitGuy943/bounce-back)](https://github.com/CircuitGuy943/bounce-back/blob/main/LICENSE.md)
 &nbsp;
 [![Hack Club Funded](https://img.shields.io/badge/Hack_Club-Funded-EC3750?style=flat&logo=hackclub&logoColor=EC3750)](https://hackclub.com/)
 &nbsp;
 ![Status](https://img.shields.io/badge/Status-Complete-green?style=flat)
 &nbsp;
-[![Last commit](https://img.shields.io/github/last-commit/CircuitGuy943/bounce-back?style=flat)](https://github.com/CircuitGuy943/CinderV2-Filament-Dryer/commits/main/)
+[![Last commit](https://img.shields.io/github/last-commit/CircuitGuy943/bounce-back?style=flat)](https://github.com/CircuitGuy943/bounce-back/commits/main/)
 &nbsp;
-[![GitHub stars](https://img.shields.io/github/stars/CircuitGuy943/CinderV2-Filament-Dryer?style=flat&color=yellow)](https://github.com/CircuitGuy943/CinderV2-Filament-Dryer/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/CircuitGuy943/bounce-back?style=flat&color=yellow)](https://github.com/CircuitGuy943/bounce-back/stargazers)
 
 
 <img width="235" height="201" alt="Screenshot 2026-11-14 155652" src="https://github.com/user-attachments/assets/c06c3de1-4bdf-4fcd-93cf-c6ef720405c6" />
