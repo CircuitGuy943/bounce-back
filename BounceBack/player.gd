@@ -13,6 +13,9 @@ func _process(delta: float) -> void:
 		velocity.x = velocity.x - 1 
 	if Input.is_action_pressed("right"):
 		velocity.x = velocity.x + 1
+	if Input.is_action_pressed("jump"):
+		velocity.y -= gravity
+
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
