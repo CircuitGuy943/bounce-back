@@ -140,7 +140,7 @@ script = ExtResource("1_grrij")
 scale = Vector2(3.5, 3.5)
 sprite_frames = SubResource("SpriteFrames_gg2sx")
 animation = &"shrink"
-frame_progress = 0.1590631
+frame_progress = 0.1752058
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=442096281]
 position = Vector2(0, 6)
