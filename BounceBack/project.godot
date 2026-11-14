@@ -23,7 +23,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/team_create/plugin.cfg")
+enabled=PackedStringArray()
 
 [physics]
 
