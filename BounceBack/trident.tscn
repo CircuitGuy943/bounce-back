@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cosnxlln0n6o"]
+
+[ext_resource type="Script" uid="uid://chapy8aid12w3" path="res://fist.gd" id="1_y5oni"]
+[ext_resource type="Texture2D" uid="uid://bahpr6m6yl6ew" path="res://trident.png" id="2_y5oni"]
+
+[node name="Node2D" type="CharacterBody2D" unique_id=1808926412]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_y5oni")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=423636597]
+rotation = 1.5707964
+texture = ExtResource("2_y5oni")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=2061573946]
+position = Vector2(-4.9999995, 2.9999998)
+rotation = 2.841396
+polygon = PackedVector2Array(75.06575, -0.14214325, 63.026394, -10.847715, 57.689747, -43.20626, 39.797802, -71.0768, 19.903679, -74.44355, 1.2832639, -77.41602, -18.883474, -93.42895, -37.109615, -97.675125, -37.443806, -74.050766, -47.573357, -54.854324, -74.26107, -40.783493, -81.05466, -23.345907, -64.52728, -0.08503723, -67.80316, 24.024475, -82.633255, 40.370102, -78.14525, 52.9254, -61.101933, 60.99269, -37.477573, 61.32688, -13.1863165, 73.03354, 4.9489517, 73.06433, 17.322504, 60.14554, 39.309673, 43.223892, 54.0181, 40.79814, 64.90542, 37.18956)
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=379340504]
+target_position = Vector2(-89.333336, 0)
+
+[node name="RayCast2D2" type="RayCast2D" parent="." unique_id=1114536524]
+target_position = Vector2(86.66667, 0)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dof5o4jaeea7i"]
 
-[ext_resource type="Texture2D" uid="uid://cgs6swns72q2b" path="res://portalRings1.png" id="1_ef3v5"]
-[ext_resource type="Script" uid="uid://ck7si71yuaqjj" path="res://animated_sprite_2d.gd" id="2_grrij"]
+[ext_resource type="Texture2D" uid="uid://qtpfjp2r4j41" path="res://portalRings1.png" id="1_ef3v5"]
+[ext_resource type="Script" uid="uid://y7rbvb0048rl" path="res://portal.gd" id="1_grrij"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6r214"]
 atlas = ExtResource("1_ef3v5")
@@ -130,10 +130,20 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="Portal" type="Node2D" unique_id=303805929]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y41jf"]
+size = Vector2(78, 100)
+
+[node name="Portal" type="Area2D" unique_id=1522878431]
+script = ExtResource("1_grrij")
 
 [node name="PortalAnimation" type="AnimatedSprite2D" parent="." unique_id=1838683272]
+scale = Vector2(3.5, 3.5)
 sprite_frames = SubResource("SpriteFrames_gg2sx")
 animation = &"shrink"
-frame_progress = 0.4893533
-script = ExtResource("2_grrij")
+frame_progress = 0.1590631
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=442096281]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_y41jf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
