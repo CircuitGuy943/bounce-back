@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://rsxhwelylnq1"]
+
+[ext_resource type="Texture2D" uid="uid://kniv5cv7omf5" path="res://rockwall.png" id="1_y26ei"]
+
+[node name="Node2D" type="Node2D" unique_id=790755226]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=683242866]
+position = Vector2(580.49994, 317.5)
+scale = Vector2(13.09375, 7.6145835)
+texture = ExtResource("1_y26ei")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2024240347]
+offset_left = 108.00003
+offset_top = 103.000015
+offset_right = 1057.0
+offset_bottom = 509.0
+text = "You WIN!
+
+Thank you for playing our amazing game !! !"
+horizontal_alignment = 1
+vertical_alignment = 1
