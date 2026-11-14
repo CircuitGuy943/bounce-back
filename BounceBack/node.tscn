@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bd53uoqfyag37"]
+
+[ext_resource type="PackedScene" uid="uid://r0bxpb5onp8g" path="res://Map.tscn" id="1_112p8"]
+[ext_resource type="Texture2D" uid="uid://bmy6y337hqhfg" path="res://icon.svg" id="2_112p8"]
+[ext_resource type="PackedScene" uid="uid://dvt1ky78os7ao" path="res://player.tscn" id="2_e2u21"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bss38"]
+size = Vector2(127, 127)
+
+[node name="Node" type="Node" unique_id=2121077247]
+
+[node name="Map" parent="." unique_id=1035768243 instance=ExtResource("1_112p8")]
+
+[node name="Player" parent="." unique_id=1070660644 instance=ExtResource("2_e2u21")]
+
+[node name="Sprite2D2" type="Sprite2D" parent="Player" unique_id=465496597]
+texture = ExtResource("2_112p8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Player" unique_id=191208757]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_bss38")
+
+[node name="Camera2D2" type="Camera2D" parent="Player" unique_id=753951984]
