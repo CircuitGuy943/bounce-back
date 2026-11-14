@@ -1198,4 +1198,12 @@ speed = 200
 position = Vector2(606, -836)
 speed = 350
 
+[node name="Label" type="Label" parent="." unique_id=1130424921]
+offset_left = 492.0
+offset_top = 1197.0
+offset_right = 677.0
+offset_bottom = 1246.0
+text = "\"A\", \"D\" and \"Jump\"
+Good luck!"
+
 [connection signal="area_entered" from="Area2D" to="Player" method="_on_area_2d_area_entered"]
