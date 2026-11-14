@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dt5hdi6rcfaqx"]
+
+[ext_resource type="Texture2D" uid="uid://cd2qej08f5f5l" path="res://left-facing_fist.png" id="1_18rt0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y41jf"]
+radius = 44.552032
+height = 166.04399
+
+[node name="Node2D" type="RigidBody2D" unique_id=579128566]
+scale = Vector2(0.75, 0.75)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=423636597]
+texture = ExtResource("1_18rt0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1745677222]
+position = Vector2(-4.9999995, 2.9999998)
+rotation = 1.2705997
+shape = SubResource("CapsuleShape2D_y41jf")

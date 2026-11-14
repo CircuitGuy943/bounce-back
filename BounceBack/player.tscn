@@ -1,19 +1,49 @@
 [gd_scene format=3 uid="uid://dvt1ky78os7ao"]
 
 [ext_resource type="Script" uid="uid://8he1s5vthj27" path="res://player.gd" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://bmy6y337hqhfg" path="res://icon.svg" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cx8faovnmv0j5" path="res://spellun-sprite.png" id="2_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://ba0vgy8ws8bpj" path="res://spellun-sprite1.png" id="3_hqtel"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgy2a"]
-size = Vector2(127, 127)
+[sub_resource type="SpriteFrames" id="SpriteFrames_y41jf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i3pqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hqtel")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aik7u"]
+radius = 38.0
+height = 92.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y41jf"]
+radius = 39.0
+height = 92.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1070660644]
 script = ExtResource("1_0xm2m")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=993533384]
-texture = ExtResource("2_h2yge")
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1214859415]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1252773885]
+position = Vector2(3, -1)
+scale = Vector2(1.01, 1.18)
+sprite_frames = SubResource("SpriteFrames_y41jf")
+frame_progress = 0.6020218
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1241147345]
-position = Vector2(-0.5, -0.5)
-shape = SubResource("RectangleShape2D_vgy2a")
+position = Vector2(1, -2)
+shape = SubResource("CapsuleShape2D_aik7u")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1214859415]
+[node name="Area2D" type="Area2D" parent="." unique_id=1257352530]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=840706079]
+shape = SubResource("CapsuleShape2D_y41jf")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

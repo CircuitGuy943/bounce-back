@@ -31,4 +31,6 @@ func _physics_process(delta: float) -> void:
 	# Move the character
 	move_and_slide()
 	
-	
+func _on_area_2d_area_entered(area) -> void:
+	if area.is_in_group("Bounce"):
+		cooldown = 60
