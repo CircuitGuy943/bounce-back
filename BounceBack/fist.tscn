@@ -1,18 +1,23 @@
 [gd_scene format=3 uid="uid://dt5hdi6rcfaqx"]
 
 [ext_resource type="Texture2D" uid="uid://cd2qej08f5f5l" path="res://left-facing_fist.png" id="1_18rt0"]
+[ext_resource type="Script" uid="uid://chapy8aid12w3" path="res://fist.gd" id="1_cqe2n"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y41jf"]
-radius = 44.552032
-height = 166.04399
-
-[node name="Node2D" type="RigidBody2D" unique_id=579128566]
+[node name="Node2D" type="CharacterBody2D" unique_id=1808926412]
 scale = Vector2(0.75, 0.75)
+script = ExtResource("1_cqe2n")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=423636597]
 texture = ExtResource("1_18rt0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1745677222]
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=2061573946]
 position = Vector2(-4.9999995, 2.9999998)
 rotation = 1.2705997
-shape = SubResource("CapsuleShape2D_y41jf")
+polygon = PackedVector2Array(31.396317, -30.409132, 46.164833, -10.484225, 48.954075, 21.085768, 51.25816, 49.714073, 48.49822, 58.630005, 38.096054, 65.180275, 31.727531, 63.208885, 24.964731, 62.511208, 22.20479, 71.42713, 16.018013, 77.88653, 3.7661188, 76.885445, -40.510128, 57.59664, -47.454678, 48.468178, -46.54446, 32.000893, -31.9562, -15.12617, -22.887821, -44.42137, -18.91426, -75.293686, -16.15432, -84.20961, -8.602968, -86.05934, 0.7072408, -84.5731, 8.743745, -83.48114, 15.506544, -82.78346, 20.601362, -81.20635, 24.907625, -77.08183, 27.15163, -70.804184, 26.939098, -61.0997, 25.847137, -53.063194, 25.149456, -46.3004, 27.787735, -41.296448)
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=379340504]
+target_position = Vector2(-89.333336, 0)
+
+[node name="RayCast2D2" type="RayCast2D" parent="." unique_id=1114536524]
+target_position = Vector2(86.66667, 0)

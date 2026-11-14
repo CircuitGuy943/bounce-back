@@ -16,7 +16,18 @@ func _process(delta: float) -> void:
 		velocity.x = velocity.x + speed
 	if Input.is_action_pressed("jump") and cooldown == 0:
 		cooldown = 60
-
+		
+	if velocity.length() > 0:
+		$AnimatedSprite2D.play()
+	else:
+		$AnimatedSprite2D.stop()
+	if velocity.x < 0:
+		$AnimatedSprite2D.animation = "default"
+		$AnimatedSprite2D.flip_h = true
+	else:
+		$AnimatedSprite2D.animation = "default"
+		$AnimatedSprite2D.flip_h = false
+	
 	if cooldown != 0:
 		cooldown = cooldown - 1
 		velocity.y -= cooldown * 15 # Use velocity.z or adjust axes for 3D if needed

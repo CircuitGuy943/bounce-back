@@ -1075,7 +1075,7 @@ tile_set = SubResource("TileSet_75ksg")
 metadata/_tc_uuid = "7447649855609612970"
 
 [node name="Player" parent="." unique_id=1070660644 instance=ExtResource("3_3h1ab")]
-position = Vector2(302, 164)
+position = Vector2(240, 860)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1442378244 groups=["Bounce"]]
 position = Vector2(418, 1046)
@@ -1086,7 +1086,7 @@ position = Vector2(127, -9.5)
 shape = SubResource("RectangleShape2D_y41jf")
 
 [node name="Node2D" parent="." unique_id=579128566 instance=ExtResource("4_7if1s")]
-position = Vector2(576, 741)
+position = Vector2(595, 726)
 gravity_scale = 0.0
 
 [connection signal="area_entered" from="Area2D" to="Player" method="_on_area_2d_area_entered"]
